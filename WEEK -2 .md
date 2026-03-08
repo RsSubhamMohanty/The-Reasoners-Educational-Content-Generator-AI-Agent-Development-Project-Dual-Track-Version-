@@ -42,6 +42,13 @@ By the end of Week 2, the system can:
 - Generate quiz questions from documents  
 - Deliver questions with varying difficulty levels via a chatbot interface  
 
+
+
+
+
+https://github.com/user-attachments/assets/33fea036-5913-44d4-88de-9324d6c30d7d
+
+
 ---
 
 
