@@ -3,6 +3,14 @@ An AI-powered educational tutor that automatically creates quizzes, flashcards, 
 
 ---
 
+## 🌐 Live Demo
+
+🔗 **Try the App Here:**  
+
+https://aistudyassistant-phl9.onrender.com/
+
+---
+
 ## 📌 Features
 
 * 📂 Upload PDF study materials
