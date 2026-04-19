@@ -1,43 +1,110 @@
-# The-Reasoners-Educational-Content-Generator-AI-Agent-Development-Project-Dual-Track-Version-
-An AI-powered educational tutor that automatically creates quizzes, flashcards, audio summaries, and interactive materials from various content. It integrates ed-tech and content processing to build a comprehensive study companion, enhancing personalized learning and accessibility.
+# 🚀 The Reasoners: Educational Content Generator AI Agent Development Project (Dual Track Version)
+
+An AI-powered educational tutor designed to transform study materials into smart learning resources. This application automatically generates **quizzes, flashcards, summaries, audio explanations, and interactive study tools** from uploaded content. It combines **Artificial Intelligence, educational technology, and content processing** to create a complete digital study companion that improves learning efficiency, personalization, and accessibility.
 
 ---
 
 ## 🌐 Live Demo
 
-🔗 **Try the App Here:**  
-
+🔗 **Try the Application Here:**
 https://aistudyassistant-phl9.onrender.com/
 
 ---
 
-## 📌 Features
+## 💻 Source Code Repository
 
-* 📂 Upload PDF study materials
-* 🧠 Generate quizzes (MCQs)
-* 📘 Create flashcards for revision
-* 📄 Generate short summaries
-* 🎧 Convert content to audio explanations
-* 📊 Study dashboard (sessions, topics, streak, graph)
-* 📅 Study planner with schedule management
-* 📤 Export generated content
+📂 Full project source code is available here:
+
+https://github.com/Dibyasha-Sahu/AIStudyAssistant.git
+
+You can clone the repository and run the project locally on your system.
 
 ---
 
-## 🛠️ Requirements
+## 📌 Core Features
+
+### 📂 Smart PDF Upload System
+
+* Upload one or multiple PDF study materials
+* Extract readable educational content automatically
+* Supports academic notes, books, and study documents
+
+### 🧠 AI Quiz Generator
+
+* Automatically generate MCQs from selected topics
+* User can choose number of questions
+* Helps in self-assessment and revision
+
+### 📘 Flashcard Review System
+
+* Creates topic-based flashcards instantly
+* Useful for quick memorization and active recall learning
+
+### 📄 Summary Generator
+
+* Converts long content into short and clear notes
+* Saves time during exam preparation
+
+### 🎧 Audio Learning Assistant
+
+* Converts topic explanations into audio format
+* Supports learning while multitasking
+
+### 📊 Study Dashboard & Analytics
+
+Tracks learning activity such as:
+
+* Total study sessions
+* Topics covered
+* Daily / monthly progress
+* Activity graph
+* Study streak
+
+### 📅 Study Planner
+
+* Add study tasks with date and time
+* Mark tasks as completed
+* Manage learning schedule efficiently
+
+### 📤 Export Functionality
+
+* Download generated quizzes
+* Save summaries
+* Export study material outputs
+
+---
+
+# 🛠️ Technology Stack
+
+| Component      | Technology |
+| -------------- | ---------- |
+| Frontend       | Streamlit  |
+| Backend        | Python     |
+| AI Model API   | Groq / LLM |
+| Database       | SQLite     |
+| PDF Processing | PyPDF2     |
+| Charts         | Plotly     |
+| Audio          | gTTS       |
+| Data Handling  | Pandas     |
+
+---
+
+# ⚙️ System Requirements
 
 Before running the project, install the following:
 
-### 1. Python
+## 1️⃣ Python
 
-* Version: Python 3.8 or above
-* Download: https://www.python.org/
+* Python Version: **3.8 or above**
+* Download from:
+
+https://www.python.org/
 
 ---
 
-### 2. Install Required Libraries
+## 2️⃣ Install Required Libraries
 
-Run this command:
+Run the following command in terminal:
 
 ```bash
 pip install streamlit PyPDF2 groq gtts plotly pandas
@@ -45,147 +112,276 @@ pip install streamlit PyPDF2 groq gtts plotly pandas
 
 ---
 
-### 3. API Setup
+## 3️⃣ API Key Setup
 
-This project uses an AI API (Groq/OpenAI).
+## Step 1: Create an Account
 
-Add your API key in the code:
+Visit the Groq developer platform:
+
+https://console.groq.com/
+
+Create a free account or sign in.
+
+
+## Step 2: Generate API Key
+
+After login:
+
+Open Dashboard
+Go to API Keys section
+Click Create New Key
+Copy the generated key
+
+Example:
+
+gsk_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+⚠️ Copy it immediately and store it safely.
+
+## Step 3: Install Groq Python Package
+
+If not already installed, run:
+
+pip install groq
+
+Open the code and replace:
 
 ```python
 client = Groq(api_key="your_api_key_here")
 ```
 
-⚠️ Keep your API key private.
+with your actual API key.
+
+⚠️ Keep your API key private and never upload it publicly.
 
 ---
 
-## ⚙️ How to Run the Project
+# ▶️ How to Run the Project Locally
+
+## Step 1: Clone Repository
+
+```bash
+git clone https://github.com/Dibyasha-Sahu/AIStudyAssistant.git
+```
+
+## Step 2: Enter Project Folder
+
+```bash
+cd AIStudyAssistant
+```
+
+## Step 3: Run Streamlit App
 
 ```bash
 streamlit run app.py
 ```
 
-Then open in browser:
+## Step 4: Open Browser
 
-```
+Streamlit will automatically run at:
+
+```text
 http://localhost:8501
 ```
 
 ---
 
-## 📖 How to Use
+# 📖 How to Use the Application
 
-1. Upload PDF files
-2. Select study material
-3. Click **Extract Topics**
-4. Choose a topic
-5. Select an action:
+## Step 1: Upload Study Material
 
-   * Quiz
-   * Flashcards
-   * Summary
-   * Audio
-6. View generated content
-7. Download results if needed
-8. Use Study Planner to schedule tasks
-9. Track progress in Dashboard
+Upload one or more PDF files containing notes, syllabus, or study content.
 
----
+## Step 2: Select Material
 
-## 📊 Database Used
+Choose the uploaded file from dropdown list.
 
-SQLite is used to store:
+## Step 3: Extract Topics
 
-* Study history (quiz, summary, etc.)
-* Study planner schedules
-* Analytics data for dashboard
+Click **Extract Topics** to detect important subjects/topics automatically.
 
----
+## Step 4: Choose Topic
 
-## ⚠️ Issues Faced During Development 
+Select a topic from the generated list.
 
-### 1. PDF Text Extraction Issue
+## Step 5: Select Learning Action
 
-* Some PDFs returned no text
-* Cause: scanned/image-based PDFs
-* Solution: Added validation and warning messages
+Choose any one:
 
----
+* 🧠 Quiz
+* 📘 Flashcards
+* 📄 Summary
+* 🎧 Audio
 
-### 2. Streamlit UI Rendering Issue
+## Step 6: View Results
 
-* Custom CSS caused layout break (black screen)
-* Cause: full-screen fixed elements
-* Solution: Removed unsafe CSS and simplified UI
+Generated content will appear instantly.
+
+## Step 7: Download Output
+
+Export quiz, summary, or notes if needed.
+
+## Step 8: Use Dashboard
+
+Track sessions, topics, progress graphs, and streak.
+
+## Step 9: Use Study Planner
+
+Add future study tasks and mark completed work.
 
 ---
 
-### 3. Duplicate Button Key Error
+# 📊 Database Used (SQLite)
 
-* Error: `StreamlitDuplicateElementKey`
-* Cause: same key used multiple times
-* Solution: used unique keys for each button
+SQLite is used as the internal lightweight database to store:
 
----
+### History Table
 
-### 4. Session State Issues
+Stores:
 
-* Data was resetting on every click
-* Solution: used `st.session_state` properly
+* Quiz generation history
+* Flashcard usage
+* Summary sessions
+* Audio sessions
+* Date/time activity logs
 
----
+### Schedule Table
 
-### 5. API Delay / Failure
+Stores:
 
-* AI responses sometimes slow or failed
-* Solution:
-
-  * Used try–except blocks
-  * Added error messages
-
----
-
-### 6. Styling Issues (Invisible Text)
-
-* Text became invisible due to CSS conflicts
-* Solution:
-
-  * Fixed colors using CSS overrides
-  * Improved contrast
+* Topic name
+* Study date
+* Study time
+* Task type
+* Completion status
 
 ---
 
-### 7. Audio Generation Issue
+# ⚠️ Real Development Issues Faced & Solutions
 
-* Audio failed when text was empty
-* Solution:
+## 1. PDF Text Extraction Problem
 
-  * Added condition checks before generating audio
+### Issue:
+
+Some uploaded PDFs returned empty text.
+
+### Cause:
+
+Scanned or image-based PDFs.
+
+### Solution:
+
+Added validation checks and warning messages.
 
 ---
 
-## 🎯 Educational Purpose
+## 2. Streamlit UI Rendering Problem
+
+### Issue:
+
+Custom CSS caused black screen / broken layout.
+
+### Cause:
+
+Full-screen fixed overlays and CSS conflicts.
+
+### Solution:
+
+Removed unstable CSS and optimized UI layers.
+
+---
+
+## 3. Duplicate Button Key Error
+
+### Issue:
+
+`StreamlitDuplicateElementKey`
+
+### Cause:
+
+Multiple buttons used same key.
+
+### Solution:
+
+Assigned unique keys to each component.
+
+---
+
+## 4. Session State Resetting
+
+### Issue:
+
+Selections were lost after clicking buttons.
+
+### Solution:
+
+Managed values using `st.session_state`.
+
+---
+
+## 5. AI API Delay / Failure
+
+### Issue:
+
+Slow or failed responses.
+
+### Solution:
+
+* Added try–except handling
+* Displayed clear error messages
+
+---
+
+## 6. Styling & Visibility Issues
+
+### Issue:
+
+White text on light boxes became invisible.
+
+### Solution:
+
+* Fixed CSS text colors
+* Improved contrast ratios
+
+---
+
+## 7. Audio Generation Issue
+
+### Issue:
+
+Audio failed when content was empty.
+
+### Solution:
+
+Added content checks before generating speech.
+
+---
+
+# 🎯 Educational Purpose
 
 This project is designed to:
 
-* Improve student learning efficiency
-* Provide interactive AI-based study tools
-* Reduce manual effort in note-making
-* Help students stay consistent with study plans
+* Improve learning productivity
+* Provide AI-based personalized study tools
+* Reduce manual note preparation time
+* Increase engagement through interactive learning
+* Support revision using multiple learning formats
+* Improve accessibility with audio learning
 
 ---
 
-## 📢 Conclusion
+# 📈 Final Project Outcome
 
-AI Study Assistant demonstrates how artificial intelligence can enhance education by making learning smarter, faster, and more interactive.
+Successfully developed a **production-ready AI Study Assistant** with:
 
+* Smart automation
+* Clean user interface
+* Real-time AI content generation
+* Educational productivity tools
+* Modern responsive design
 
+---
 
+# 📢 Conclusion
 
-
-
-
-  
-
-
-
+AI Study Assistant demonstrates how Artificial Intelligence can transform traditional education into a smarter, faster, and more engaging experience. By combining automation, analytics, and personalized study tools, the system serves as a complete digital learning companion for modern students.
