@@ -11,6 +11,14 @@ https://aistudyassistant-phl9.onrender.com/
 
 ---
 
+## Here is the project code repo where complete code is available 
+
+You can use this code to run your project in local
+
+https://github.com/Dibyasha-Sahu/AIStudyAssistant.git
+
+---
+
 ## 📌 Features
 
 * 📂 Upload PDF study materials
